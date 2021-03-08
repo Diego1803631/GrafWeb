@@ -10,36 +10,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Settings</title>
-
+    <title>Info</title>
 </head>
 
 <body style="background-image: linear-gradient(45deg, #b8b8b8 0.50%, #548dbf 0.50%, #548dbf 50%, #b8b8b8 50%, #b8b8b8 50.50%, #548dbf 50.50%, #548dbf 100%);
 background-size: 142.84px 142.84px;">
 
-    <div class="centered">
-        <div class="text-center">
-            <h2>Settings <span id="loading" class="material-icons">settings</span></h2>
-        </div>
-        <br>
-        <label>Graphic quality </label>
-        <button type="button" class="btn btn-light">High</button>
-        <button type="button" class="btn btn-light">Low</button>
-        <br>
-        <label for=fader>Volume</label>
-        <input type=range min=0 max=100 value=50 id=fader step=1 onchange="outputUpdate(value)">
-        <output for=fader id=volume>50</output>
-        <br>
-        <a id="back" href="principal.html"><span class="material-icons">arrow_back</span></a>
+
+<div class="centered">
+    <div class="text-center">
+        <h2>How to Play</h2>
+        <img src="https://raw.githubusercontent.com/Geekerxd/recursos/main/control.png" alt="" style="width: 80%;">
     </div>
+    
+    <br>
+    
+    <a id="back" href="principal.html"><span class="material-icons">arrow_back</span></a>
+</div>
 
 
 
-    <script>
-        function outputUpdate(vol) {
-            document.querySelector('#volume').value = vol;
-        }
-    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
